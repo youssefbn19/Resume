@@ -1,0 +1,340 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;500;600;700;800;900&display=swap');
+
+
+:root {
+    --bgColor: #060606;
+    --primaryColor : #eeeeee;
+    --secondryColor : #81B636;
+    --thirdColor: rgba(255, 255, 255, 0.4);
+}
+
+body{
+    font-family: 'Nunito', sans-serif;
+    background-color: var(--bgColor);
+    color:var(--primaryColor);
+
+}
+.hero-container{
+    background: linear-gradient(#06060681,#060606), url(../img/heroBg.jpg) no-repeat fixed center center;
+    background-size: cover;
+    min-height: 100vh;
+}
+.hero-container a:not(a.navbar-brand){
+    color: var(--primaryColor) !important;
+    font-size: 18px !important;
+}
+.hero-container .navbar-brand{
+    font-size: 40px;
+    font-weight: 700;
+    text-transform: uppercase;
+    border: 2px solid var(--primaryColor);
+    color: var(--primaryColor) !important;
+    padding: 0 0.5rem;
+}
+
+.hero-container .nav-link{
+    padding: 0 0 2px 0 !important;
+}
+.nav-link:hover{
+    color: var(--secondryColor) !important;
+}
+ .nav-item .nav-link:after {
+    content: '';
+    display: block;
+    margin: auto;
+    height: 2px;
+    width: 0px;
+    background: transparent;
+    transition: width .5s ease, background-color .5s ease;
+}
+
+ .nav-item .nav-link:hover:after {
+    width: 100%;
+    background: var(--secondryColor);
+}
+.hero-container .nav-item{
+    padding: 15px 20px;
+}
+.fa-bars, .fa-xmark{
+    font-size: 30px;
+    color: var(--primaryColor);
+}
+.hero-container .navbar-toggler:focus:not(:focus-visible){
+    border:none;
+    box-shadow: none;
+}
+
+.hero{
+    min-height: calc(100vh - 88px);
+}
+.hero h1 {
+    font-weight: 700;
+    font-size: 60px;
+    line-height: 1.2;
+    text-align: center;
+}
+.hero h1 span {
+    color: var(--secondryColor);
+}
+.about-me{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+}
+.about-img{
+    padding: 0;
+}
+.about-img img{
+    max-width: 100%;
+    border-radius: 50%;
+    box-shadow: 0 0 20px var(--secondryColor);
+    
+}
+.letter{
+    margin-bottom: -65px;
+    margin-left: 6px;
+    font-size: 100px;
+    font-weight: 900;
+    color: var(--thirdColor);
+}
+h1:not(.hero h1){
+    font-size: 70px;
+    font-weight: 700;
+    color: var(--secondryColor);
+}
+.about-content .email{
+    margin-top: 1.5rem;
+    font-size: 18px;
+}
+.about-content .email span, .about-content .email i{
+    color: var(--secondryColor);
+    font-weight: 700;
+}
+
+.skills{
+    min-height: 400px;
+    margin-top: 4rem;
+    margin-bottom: 8rem;
+}
+.skills p{
+    margin-bottom:0.2rem;
+    margin-left: 5px;
+}
+.progress-container{
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+}
+.progress{
+    background-color: var(--thirdColor);
+    border-radius: 100px;
+    height: 14px;
+}
+.progress .progress-bar{
+    background-color: var(--secondryColor);
+}
+.experience{
+    min-height: 100vh;
+    background-color: var(--secondryColor);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+.experience h1, .projects h1{
+    color: var(--bgColor)!important;
+}
+.experience h2, .projects h2{
+    color: var(--thirdColor);
+}
+.carousel{
+    background-color: var(--primaryColor);
+    color:var(--bgColor)
+}
+.carousel-item{
+    padding: 2.5rem;
+}
+.experience-content h3{
+    font-weight: 900;
+    margin-bottom: 0;
+}
+.experience-content h4 {
+    font-size: 18px;
+    font-weight: 400;
+    color: var(--secondryColor);
+    margin-bottom: 0.5rem;
+}
+.experience-content h5{
+    font-size: 16px;
+    font-weight: 600;
+    margin-bottom: 1.2rem;
+}
+.experience-content i{
+    padding-right: 8px;
+    color: var(--secondryColor);
+}
+.experience-content{
+    min-height: 310px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.carousel-control-next,
+.carousel-control-prev{
+    width: auto;
+}
+.carousel-control-next span,
+.carousel-control-prev span{
+    background-color: var(--secondryColor);    
+}
+.education{
+    min-height: 100vh;
+    margin-top: 5rem;
+    margin-bottom: 5rem;
+}
+.education-content h3{
+    font-weight: bold;
+    font-size: 24px;
+    margin-bottom: 0;
+}
+.education-content h4{
+    color: var(--secondryColor);
+    font-size: 24px;
+    font-weight: 700;
+    margin-bottom: 1rem;
+}
+.education-content{
+    padding: 0rem 0rem 1.5rem 1.5rem;
+    position: relative;
+}
+.content{
+        border-left: 4px solid var(--thirdColor);
+}
+.education-content .circle{
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: var(--secondryColor);
+    border-radius: 50%;
+    box-shadow: 0px 0px 10px var(--secondryColor);
+    position: absolute;
+    top: 0;
+    left:-15px
+    
+}
+.education-content p{
+    font-size: 18px;
+    font-weight: 500;
+    line-height: 1.2;
+}
+.education-content p span{
+    font-weight: 200;
+    font-size: 16px;
+}
+.projects{
+    min-height: 100vh;
+    background-color: var(--secondryColor);   
+    padding: 4rem 0;
+}
+
+.projects .row{
+    min-height: 350px;
+}
+.projects .project-content{
+    height: 100%;
+    background-color: var(--primaryColor);
+    color: var(--bgColor);
+    padding: 2rem;
+    border-radius: 5px;
+    transition: 0.5s;
+}
+.projects .project-content i{
+    font-size: 35px;
+    background-color: var(--secondryColor);
+    padding: 0.6rem;
+    margin-bottom: 1.2rem;
+    color: var(--primaryColor);
+    border-radius: 5px;
+}
+.projects .project-content h3{
+    font-weight: 700;
+    font-size: 35px;
+    margin-bottom: 1.5rem;
+    color: var(--secondryColor);
+}
+.projects .project-content:hover{
+    background-color: var(--bgColor);
+    color:var(--primaryColor)
+}
+body > h2{
+    color: var(--secondryColor);
+    text-align: center;
+    padding: 1.5rem;
+    margin: 0;
+    font-size: 35px;
+    
+}
+footer{
+    border-top: 1px solid var(--thirdColor);
+    padding: 0.5rem;
+
+}
+footer p{
+        font-size: 14px;
+}
+@media (max-width: 768px) {
+    .hero-container .navbar-nav{
+        height : calc(100vh - 90px);
+        font-size: 20px;
+    }
+    h1:not(.hero h1) {
+        font-size: 55px !important;
+    }
+    .hero h1{
+        font-size: 45px;
+    }
+    .letter {
+        margin-bottom: -40px;
+        font-size: 60px;
+    }
+ body>h2{
+    font-size: 25px;
+ }
+        .hero-container .navbar-brand{
+            font-size: 30px;
+        }
+}
+@media (max-width:375px){
+    h1{
+        font-size: 45px !important;
+    }
+    .letter {
+        margin-bottom: -30px;
+        font-size: 40px;
+    }   
+     .hero h1 {
+          font-size: 35px !important;
+    }
+    h2{
+        font-size: 80px !important;
+        margin-bottom: -45px !important;
+    }
+    .experience .container-lg{
+        padding: 0;
+    }
+    .carousel-item {
+         padding: 2rem;
+    }
+    .education-content h4,
+    .education-content h3{
+        font-size: 20px;
+    }
+    .education-content p{
+        font-size: 16px;
+    }
+         body>h2 {
+             font-size: 20px;
+         }
+
+}
